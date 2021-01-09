@@ -24,7 +24,6 @@ stages:
       displayName: Build an image
       inputs:
         command: buildAndPush
-        repository: $(imageRepository)
         dockerfile: '$(Build.SourcesDirectory)/testSpa/Dockerfile'
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
